@@ -104,127 +104,162 @@ header img {
 }
 
 /** BUTTOM **/
-.btn{
-    display: inline-block;
-    width: 15rem;
-    padding: 1rem;
-    background-color: blueviolet;
-    color: hsl(0, 0%, 100%);
-    border-radius: 2rem;
-    font-weight: 600;
+.btn {
+  display: inline-block;
+  width: 15rem;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  font-weight: 600;
 }
-.ios{
-    background-color: hsl(171, 66%, 44%);
-    box-shadow: 0px 10px 15px -3px hsl(171, 66%, 44%, 0.4), inset 0px -15px 0px -12px rgba(0,0,0,0.2);
-    margin-bottom: 1.5rem;
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 10px 15px -3px hsl(171, 66%, 44%, 0.4),
+    inset 0px -15px 0px -12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
 }
-.mac{
-    background-color: hsl(233, 100%, 69%);
-    box-shadow: 0px 10px 15px -3px hsl(233, 100%, 69%, 0.4), inset 0px -15px 0px -12px rgba(0,0,0,0.2);
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 10px 15px -3px hsl(233, 100%, 69%, 0.4),
+    inset 0px -15px 0px -12px rgba(0, 0, 0, 0.2);
 }
-ul{
-    margin-top: 5rem;
+ul {
+  margin-top: 5rem;
 }
-.company li{
-    margin-top: 2.5rem;
- 
+.company li {
+  margin-top: 2.5rem;
 }
-.company li>img{
-    width: 40%;
+.company li > img {
+  width: 40%;
 }
-footer{
-    background-color: hsl(201, 11%, 66%, 0.1);
-    margin-top: 8rem;
-    padding: 2rem;
-    font-weight: 600;
-    width: 100%;
+footer {
+  background-color: hsl(201, 11%, 66%, 0.1);
+  margin-top: 8rem;
+  padding: 2rem;
+  font-weight: 600;
+  width: 100%;
 }
-footer>img{
-    max-width: 20%;
+footer > img {
+  max-width: 20%;
 }
-.extra-links{
-    margin-top: 2rem;
+.extra-links {
+  margin-top: 2rem;
 }
-.extra-links>li{
-    padding: 0.5rem;
+.extra-links > li {
+  padding: 0.5rem;
 }
-.socials{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-top: 2rem;
+.socials {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2rem;
 }
-.socials>li{
-    padding: 0.8rem;
+.socials > li {
+  padding: 0.8rem;
 }
 
-
-
-@media (min-width: 33rem){
-  .container{
+@media (min-width: 33rem) {
+  .container {
     max-width: 30rem;
   }
 }
 
-@media (min-width: 68.75rem){
-  .container{
+@media (min-width: 68.75rem) {
+  .container {
     max-width: 75%;
   }
-  .btn{
+  .btn {
     display: inline;
     margin-right: 2rem;
     padding: 1rem 2rem;
   }
+  .ios:hover{
+    background-color: hsl(171, 66%, 44%, 0.7);
+    transition: background-color 0.4s ease-in-out;
+  }
+  .mac:hover{
+    background-color: hsl(233, 100%, 69%, 0.7);
+    transition: background-color 0.4s ease-in-out;
+  }
 
-  article:nth-child(1) img{
+  article:nth-child(1) img {
     float: left;
     margin-left: -13rem;
     margin-right: 5rem;
     max-width: 145%;
-    margin-top: ;
+  
   }
-  article:nth-child(1) h3{
+  article:nth-child(1) h3 {
     text-align: left;
-    margin-top: ;
 
   }
-    article:nth-child(1) p{
+  .dsk{
+    padding-top: 7rem;
+  }
+  article:nth-child(1) p {
     text-align: left;
   }
-  .psh-dsk{
+  .psh-dsk {
     margin-bottom: 5rem;
   }
-  .clear{
+  .clear {
     clear: both;
-    margin-top: 20rem;
+    padding-top: 5rem;
   }
-  .workflow{
+  .workflow {
     display: flex;
     justify-content: space-between;
   }
-  .workflow li{
+  .workflow li {
     padding: 3rem;
   }
-  .company{
+  .company {
     display: flex;
     justify-content: space-between;
   }
-  .company li>img{
+  .company li > img {
     width: 90%;
-}
-footer{
-  padding: 0rem 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.extra-links{
-       height: 5rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-}
-.extra-links li{
-  text-align: left;
-}
+  }
+  footer {
+    padding: 0rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+  }
+  footer > img {
+    width: 5rem;
+    padding: 3rem 0rem;
+  }
+  .extra-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-top: 0rem;
+  }
+  .contact{
+    grid-column: 1/2;
+  }
+  .policy{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .guide{
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .extra-links li {
+    text-align: left;
+  }
+  .socials {
+    margin-top: 0rem;
+  }
+  span:hover{
+    color: hsl(171, 66%, 44%);
+    transition: color 0.4s ease-in-out;
+  }
+  .socials li img:hover{
+    filter: invert(39%) sepia(100%) saturate(400%) hue-rotate(130deg) brightness(100%) contrast(60%);
+  }
 }
