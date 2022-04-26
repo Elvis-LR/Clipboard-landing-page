@@ -167,18 +167,18 @@ footer > img {
 
 @media (min-width: 68.75rem) {
   .container {
-    max-width: 75%;
+    max-width: 60%;
   }
   .btn {
     display: inline;
     margin-right: 2rem;
     padding: 1rem 2rem;
   }
-  .ios:hover{
+  .ios:hover {
     background-color: hsl(171, 66%, 44%, 0.7);
     transition: background-color 0.4s ease-in-out;
   }
-  .mac:hover{
+  .mac:hover {
     background-color: hsl(233, 100%, 69%, 0.7);
     transition: background-color 0.4s ease-in-out;
   }
@@ -188,21 +188,17 @@ footer > img {
     margin-left: -13rem;
     margin-right: 5rem;
     max-width: 145%;
-  
   }
   article:nth-child(1) h3 {
     text-align: left;
-
   }
-  .dsk{
+  .dsk {
     padding-top: 7rem;
   }
-  article:nth-child(1) p {
+  .pushleft {
     text-align: left;
   }
-  .psh-dsk {
-    margin-bottom: 5rem;
-  }
+
   .clear {
     clear: both;
     padding-top: 5rem;
@@ -238,14 +234,14 @@ footer > img {
     column-gap: 2rem;
     margin-top: 0rem;
   }
-  .contact{
+  .contact {
     grid-column: 1/2;
   }
-  .policy{
+  .policy {
     grid-row: 1/2;
     grid-column: 2/3;
   }
-  .guide{
+  .guide {
     grid-row: 1/2;
     grid-column: 3/4;
   }
@@ -255,11 +251,12 @@ footer > img {
   .socials {
     margin-top: 0rem;
   }
-  span:hover{
+  span:hover {
     color: hsl(171, 66%, 44%);
     transition: color 0.4s ease-in-out;
   }
-  .socials li img:hover{
-    filter: invert(39%) sepia(100%) saturate(400%) hue-rotate(130deg) brightness(100%) contrast(60%);
+  .socials li img:hover {
+    filter: invert(39%) sepia(100%) saturate(400%) hue-rotate(130deg)
+      brightness(100%) contrast(60%);
   }
 }
